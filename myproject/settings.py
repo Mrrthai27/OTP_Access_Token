@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
     'auth_app.apps.AuthAppConfig',
-    
+    'rest_framework.authtoken',
 ]
 AUTH_USER_MODEL = 'auth_app.User'
 
@@ -91,7 +91,7 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 DATABASES = {
    'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'auth',
+        'NAME': 'auth_otp',
         'USER': 'root',
         'PASSWORD': 'root',
         'HOST': '127.0.0.1',
